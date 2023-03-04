@@ -12,7 +12,7 @@ This project can be used as a reference project when writing your own tutorials,
 
 ## How to use Prism.js
 
-Prism.js is an excellent library that will allow you to display source code stylized as if it were displayed in an IDE.  This is excellent for code snippets, small blogs, or any type of examples you want to showcase!  How to use.
+Prism.js is an excellent library that will allow you to display source code stylized as if it were displayed in an IDE.  This is excellent for code snippets, small blogs, or any type of examples you want to showcase!
 
 1. Visit the download page at [Prism.js](https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+git+java+sql)
 2. Select the languages you want to support

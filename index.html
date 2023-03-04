@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="js/prism.js"></script>
-    <link rel="stylesheet" href="styles/prism.css">
+    <link rel="stylesheet" href="styles/prism.css" />
     <title>My code snippets</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <section class="example-1">
-            <p>Use Prism.js by linking to appropriate files.</p>
+      <h1>Sample Snippet Page hosted on GitHub Pages</h1>
+      <p>
+        This project can be used as a reference project when writing your own
+        tutorials, blogs, or code snippets that you would like to host (for
+        free) on GitHub Pages.
+      </p>
 
-<pre><code class="language-html">
-&lt;head&gt;
+      <h2>How to use Prism.js to display code</h2>
+
+      <p>
+        Prism.js is an excellent library that will allow you to display source
+        code stylized as if it were displayed in an IDE. This is excellent for
+        code snippets, small blogs, or any type of examples you want to
+        showcase!
+      </p>
+<h3>Set up</h3>
+      <ol>
+<li>Visit the download page at <a target="_blank" href="https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+git+java+sql">Prism.js</a></li>
+<li>Select the languages you want to support</li>
+<li>Download <em>prism.css</em> and <em>prism.js</em></li>
+<li>Navigate to the root of your repository and create a <em>/js</em> directory and a <em>/styles</em> directory.</li>
+<li>Copy <em>prism.js</em> to your <em>/js</em> directory and copy <em>prism.css</em> to your <em>/styles</em> directory.</li>
+<li>Reference the <em>prism.css</em> and <em>prism.js</em> files in your index.html</li>
+      </ol>
+
+      <pre><code class="language-html">&lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
@@ -24,8 +45,66 @@
 &lt;/head&gt;
 </code></pre>
 
+    <p>
+        Once you've done this now you can start adding code snippets using the following format:
+    </p>
+<h3>Displaying CSS</h3>
+<pre><code class="language-html">&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;p { color: red }&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-        </section>
+<h3>Displaying HTML</h3>
+ <p>   To display HTML you need to escape your HTML text otherwise your HTML will render in the browser!  </p>
+ 
+ <p>To do this visit this free tool: 
+    <a href="https://www.freeformatter.com/html-escape.html#before-output">FreeFormatter</a></p>
+
+    <p>Copy your HTML to this page, escape it, and copy and paste the new string into your < CODE > < PRE > block.  It should look like this:</p>
+<pre><code class="language-html">&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;
+    &amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-css&amp;quot;&amp;gt;p { color: red }&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+<h3>Displaying JavaScript</h3>
+<p>This is JavaScript.  Change the class for your < CODE > tag to 'language-js'</p>
+<pre><code class="language-js">function displayMessage(message){
+    console.log('This is your message: ' + message);
+}
+
+displayMessage('Hello World');
+</code></pre>
+<h3>Displaying Java</h3>
+<p>This is Java.  Change the class for your < CODE > tag to 'language-java'</p>
+<pre><code class="language-java">
+public class JackInTheBox() {
+    private boolean isOpen;
+
+    public void turnCrank() {
+        if (!isOpen) {
+            System.out.println("Jack pops out!");
+            isOpen = true;
+        }
+    }
+
+    public void closeBox() {
+        isOpen = false;
+    }
+}
+</code></pre>
+<h3>Displaying SQL</h3>
+<p>This is SQL.  Change the class for your < CODE > tag to 'language-sql'</p>
+<pre><code class="language-sql">
+    CREATE TABLE charms_class (
+        student_name varchar(255),
+        charms_grade varchar(255)
+    );
+    INSERT INTO charms_class (student_name, charms_grade)
+    VALUES
+        ('Harry', 'C'),
+        ('Ron', 'D'),
+        ('Hermione', 'A'),
+        ('Luna', 'B'),
+        ('Neville', 'B')
+    ;
+</code></pre>
     </main>
-</body>
+  </body>
 </html>
