@@ -16,14 +16,15 @@ Prism.js is an excellent library that will allow you to display source code styl
 
 1. Visit the download page at [Prism.js](https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+git+java+sql)
 2. Select the languages you want to support
-3. Download each file and place them in the root of your repository (or within a directory in your repo).
-4. Reference the `prism.css` and `prism.js` files in your index.html
+3. Download `prism.css` and `prism.js`
+4. Navigate to the root of your repository and create a `/js` directory and a `/styles` directory.
+5. Copy `prism.js` to your `/js` directory and copy `prism.css` to your `/styles` directory.
+6. Reference the `prism.css` and `prism.js` files in your index.html
 
 ```
 <head>
-  <!-- Remember!  if you saved these files in a sub-directory of your repo, you need to reference that path for these files. -->
-  <script type="text/javascript" src="prism.js"></script>
-  <link rel="stylesheet" href="prism.css">
+  <script type="text/javascript" src="js/prism.js"></script>
+  <link rel="stylesheet" href="styles/prism.css">
 </head>
 ```
 Once that's done, you can start adding code snippets using following format:
@@ -31,6 +32,11 @@ Once that's done, you can start adding code snippets using following format:
 ```
 <pre><code class="language-css">p { color: red }</code></pre>
 ```
+If you want to display HTML, then your text will still get rendered.  To get around this, you need to use an escaped string of your HTML.  This encodes your HTML so that it will display as text and not rendered. To do this visit this page:
+https://www.freeformatter.com/html-escape.html
+
+Paste your HTML, make an escape string for it, then Copy and Paste that new text into the `<PRE><CODE>` block above.
+
 If you use the `prism.js` and `prism.css` provided in this repo you will also have access to the following languages:
 
 * Markup
